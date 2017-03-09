@@ -1,0 +1,19 @@
+.course-summary{
+
+  border: solid 1px black;
+}
+.lesson-logo{
+  width: auto;
+  height: 30px;
+}
+
+#contenedor{
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+#contenedor table{
+  margin-left: 45px;
+  margin-bottom: 5px;
+}

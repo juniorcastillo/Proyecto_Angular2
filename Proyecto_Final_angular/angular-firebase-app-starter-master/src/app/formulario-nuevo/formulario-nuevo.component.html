@@ -1,0 +1,32 @@
+<form [formGroup]="form" autocomplete="off" novalidate class="lesson-form">
+
+  <fieldset>
+    <legend>Detalle</legend>
+    <div class="form-field">
+      <label>Descripcion:</label>
+      <input name="title" formControlName="descrip" placeholder="Descripción">
+      <div class="field-error-message"
+          *ngIf="isErrorVisible('descrip','required')">Este campo es necesario</div>
+    </div>
+    <div class="form-field">
+      <label>Horas:</label>
+      <input name="title" formControlName="horas" placeholder="Horas">
+      <div class="field-error-message"
+           *ngIf="isErrorVisible('horas','required')">Este campo es necesario</div>
+    </div>
+    <div class="form-field">
+      <label>Id_maestro:</label>
+      <input name="title" formControlName="id_maestro" placeholder="8">
+      <div class="field-error-message"
+           *ngIf="isErrorVisible('id_maestro','required')">Este campo es necesario</div>
+    </div>
+    <div class="form-field">
+      <label>Url:</label>
+      <input name="title" formControlName="url" placeholder="profesor-seis">
+      <div class="field-error-message"
+           *ngIf="isErrorVisible('url','required')">Este campo es necesario</div>
+    </div>
+  </fieldset>
+
+
+</form>

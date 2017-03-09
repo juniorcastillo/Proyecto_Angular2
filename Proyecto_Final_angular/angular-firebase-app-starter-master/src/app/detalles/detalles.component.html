@@ -1,0 +1,22 @@
+<!--
+   {{course.description}} [routerLink]="course.url"
+-->
+<div id="contenedor">
+<table class="courses-list card card-strong">
+    <tr class="course-summary" *ngFor="let detalle of (detalles$ | async)">
+        <td>
+            <img class="lesson-logo"
+                 src="https://material.angularjs.org/latest/img/icons/angular-logo.svg">
+        </td>
+        <td class="description">
+             {{detalle.descripcion}}
+
+        </td>
+
+
+    </tr>
+
+</table>
+
+<div id="boton_nuevo"><button routerLink="new" >Nuevo detalle</button></div>
+</div>

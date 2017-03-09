@@ -1,0 +1,12 @@
+
+<h2>All Teacher</h2>
+
+
+
+<input class="search-bar" placeholder="Search" (keyup)="search(input.value)" #input>
+
+<div class="lessons-list-container v-h-container-block-parent">
+
+    <maestros-list [maestros]="filtro"></maestros-list>
+
+</div>

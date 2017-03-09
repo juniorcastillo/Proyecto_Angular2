@@ -1,0 +1,34 @@
+<!--
+ {{ (course$ | async)?.description  }}
+
+ *ngIf="lessons" [lessons]="lessons"
+               (lesson)="navigateToLesson($event)"
+
+
+  -->
+
+
+<h2></h2>
+
+
+<div class="lessons-list-container v-h-center-block-parent">
+
+
+  <table class="table lessons-list card card-strong">
+    <tbody>
+    <tr *ngFor="let detallado of detalles">
+      <td class="lessons-title">{{detallado.descripcion}}</td>
+      <td class="duration">
+        {{detallado.horas}}
+        <span><i class="md-icon duration-icon">access_time</i> </span>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+    <!--<app-detalles></app-detalles>-->
+
+    <div class="tools-bar">
+      
+    </div>
+
+</div>
